@@ -25,8 +25,9 @@
 .text-size{
     font-size: 1vw;
 }
-.bg-publicacao{
+#conteudo{
     background-color: rgba(17.5, 17.5, 17.5, 0.7);
+    max-height: 70vh;
 }
 .bg-noticia{
     background-color: #1b1e23;
