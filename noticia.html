@@ -19,16 +19,17 @@
   <title>Blog</title>
 </head>
 
-<body style="background-image: url('./imagem/sim.png');">
-
+<body>
+  <div style="background-image: url('./imagem/sim.png'); height: 100vh;">
   <div>
-    <h1 class="fs-1 text-white text-center p-5 fw-light">Noticias</h1>
+    <h1 class="fs-1 text-white text-center p-5 fw-light">Consumo da api de gatos</h1>
 
     <div class="container">
       <div class="row text-center" ng-controller="Rest">
-        <div class="col-12" ng-repeat="publicacao in publicacoes">
+        <div class="col-12">
           <div class="teste mt-3 mb-3 bg-publicacao rounded">
-              <div id="conteudo"></div>
+              <img id="conteudo" class="img-fluid p-3 rounded" src="{{ url }}" alt="">
+            </div>
               <button type="button" class="btn btn-outline-light m-2" onclick="location.reload()">Atualizar</button>
           </div>
         </div>
@@ -38,6 +39,7 @@
     <div class="container text-center">
       <a href="./index.html"><button type="button" class="btn btn-outline-light mb-5">Pagina Inicial</button></a>
     </div>
+  </div>
   </div>
   <footer class="bg-not text-center text-white">
     <div class="container p-4 pb-0">
